@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100&family=Babylonica&family=El+Messiri:wght@600&family=Meow+Script&family=Pompiere&family=Quicksand:wght@700&family=Tilt+Warp&display=swap" rel="stylesheet">
+    <title>Temperture Converter</title>
+    <link rel="stylesheet" href="task3.css">
+    <script src="task3.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <h1>Temperature Converter<ion-icon name="thermometer-outline"></ion-icon></h1>
+    <div class="temp-container">
+        <form id="cal-temp" onsubmit="calculateTemp(); return false">
+            <label for="temp-cal">Degree</label>
+            <br>
+            <input type="number" name="con-temp" id="con-temp" value="0">
+            <select name="temp1" id="temp1">
+            <option value="cel">&#176;Celsius</option>
+            <option value="fah">&#176;Fahrenheit</option>
+            </select>
+            <br>
+            <button type="submit" name="con-temp" id="submit">convert</button>
+            <br>
+            <span id="final-result"></span>
+        </form>
+    </div>
+    
+</body>
+</html>
